@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
+
     <link rel="stylesheet" type="text/css" href="assets/style.css">
 
     <!-- The below lines of code bootstraps an additional css file -->
@@ -23,8 +23,13 @@
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet" 
-      />
-    
+    />
+
+
+    <link
+      href="https://momentjs.com/downloads/moment-with-locales.js"
+      rel="current date"
+    />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -33,19 +38,12 @@
     <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <!-- The next 6 lines of code are creating a button and string to populate the current date when the get current date button is pressed -->
-      <p id="currentDay" class="lead"><p style="color: blue; font-weight: bolder;"> Current Date is: <span class="output"></span></p>
-      <button onclick="getCurrentDate()">Get Current Date</button>
-    <script type="text/javascript">
-    function getCurrentDate() {
-        let date = new Date().toDateString();
-        document.querySelector('.output').textContent = date;
-    }
-    </script></p>
+      
+      <p id="datetime" class="lead"><p> <span class="output"></span></p>
     <!-- The below line of code is creating time-blocks for each time frame. My present time block is 2:00 PM. -->
     </header>
     <div class="container-lg px-5">
-      <div id="hour-9" class="row time-block past">
+      <div id="t09" class="row time-block 9AM">
         <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 9AM timeblock -->
@@ -54,7 +52,7 @@
         </button>
       </div>
 
-      <div id="hour-10" class="row time-block past">
+      <div id="t10" class="row time-block 10AM">
         <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 10AM timeblock -->
@@ -63,7 +61,7 @@
         </button>
       </div>
 
-      <div id="hour-11" class="row time-block past">
+      <div id="t11" class="row time-block 11AM">
         <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 11AM timeblock -->
@@ -72,7 +70,7 @@
         </button>
       </div>
 
-      <div id="hour-12" class="row time-block past">
+      <div id="t12" class="row time-block 12PM">
         <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 12PM timeblock -->
@@ -81,7 +79,7 @@
         </button>
       </div>
 
-      <div id="hour-13" class="row time-block past">
+      <div id="t13" class="row time-block 1PM">
         <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 1PM timeblock -->
@@ -90,7 +88,7 @@
         </button>
       </div>
 
-      <div id="hour-14" class="row time-block present">
+      <div id="t14" class="row time-block 2PM">
         <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 2PM timeblock -->
@@ -99,7 +97,7 @@
         </button>
       </div>
 
-      <div id="hour-15" class="row time-block future">
+      <div id="t15" class="row time-block 3PM">
         <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 3PM timeblock -->
@@ -108,7 +106,7 @@
         </button>
       </div>
 
-      <div id="hour-16" class="row time-block future">
+      <div id="t16" class="row time-block 4PM">
         <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
         <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 4PM timeblock -->
@@ -116,7 +114,7 @@
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
 
-        <div id="hour-17" class="row time-block future">
+        <div id="t17" class="row time-block 5PM">
           <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
           <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
           <!-- The line of code below add styling and a string to the save button associated with the 5PM timeblock -->
