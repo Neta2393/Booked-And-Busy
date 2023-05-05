@@ -9,7 +9,9 @@ The following repo is titled Booked and Busy. I tried to make the repo name some
 
 The contents of this repo include the index.html file, an assets folder that holds the JavaScript file and CSS styling sheet. The repo also includes this README.md file that you are currently reading that holds a screenshot of the deployed webpage. 
 
-[!img]
+## Site:
+
+While initially the functions seemed to come together at the very end when I went to deploy the site there seemed to be issues that were causing the attributes and functions to not work as I had planned. As the deadline approaches I am opting to submit and go back to fix the buys. Thank you for your time!
 
 
 ## Sources: 

@@ -10,7 +10,7 @@ $(document).ready(function () {
 
  });
 });
-
+//  The line of code below is attempting to get the color of the time blocks. When I initially deployed the site they worked and when I went to publish them they seemed to not work anymore.
 const timeBlock = document.getElementById("time-block");
 	timeBlock.innerText = `The current hour is ${hour}`;
 
