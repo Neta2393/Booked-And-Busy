@@ -13,6 +13,8 @@ The contents of this repo include the index.html file, an assets folder that hol
 
 While initially the functions seemed to come together at the very end when I went to deploy the site there seemed to be issues that were causing the attributes and functions to not work as I had planned. As the deadline approaches I am opting to submit and go back to fix the buys. Thank you for your time!
 
+[!img]
+![127 0 0 1_5501_index html (1)](https://user-images.githubusercontent.com/128006949/236395070-92ad9ee5-43f5-4ff6-86b7-fc7491632738.png)
 
 ## Sources: 
 
