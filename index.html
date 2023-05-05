@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <!-- The below line of code is from the JavaScript library that links a function to help display the date and time -->
 
-    <!-- The below lines of code bootstraps an additional css file -->
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      href="https://momentjs.com/downloads/moment-with-locales.js"
+      rel="current date"
     />
+
     <!-- The next line of code links the font style fontawesome with the index.html -->
     <link
       rel="stylesheet"
@@ -19,18 +19,23 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    
+    <!-- The below lines of code bootstraps an additional css file -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    />
     <!-- The next line of code is linking a font family that is located in google api's -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet" 
     />
+    <!-- Added my stylesheet located in the assets folder of my repo. Always remember that the placement of my css and the bootstrapped CSS files are important. -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 
-
-    <link
-      href="https://momentjs.com/downloads/moment-with-locales.js"
-      rel="current date"
-    />
+    <!-- The below line of code is from the JavaScript library that links a function to help display the date and time -->
     <title>Work Day Scheduler</title>
+     <script type = "text/JavaScript" src = "https://momentjs.com/downloads/moment-with-locales.js"></script>
   </head>
 
   <body>
@@ -42,96 +47,101 @@
       <p id="datetime" class="lead"><p> <span class="output"></span></p>
     <!-- The below line of code is creating time-blocks for each time frame. My present time block is 2:00 PM. -->
     </header>
-    <div class="container-lg px-5">
-      <div id="t09" class="row time-block 9AM">
+    <div class="container-lg px-3">
+      <div id="hour09" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 description" rows="3" placeholder="Schedule"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 9AM timeblock -->
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <div id="t10" class="row time-block 10AM">
+      <div id="hour10" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 description" rows="3" placeholder="Schedule" > </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 10AM timeblock -->
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <div id="t11" class="row time-block 11AM">
+      <div id="hour11" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 description" rows="3" placeholder="Schedule" > </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 11AM timeblock -->
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <div id="t12" class="row time-block 12PM">
+      <div id="hour12" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">12PM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 description" rows="3" placeholder="Schedule"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 12PM timeblock -->
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <div id="t13" class="row time-block 1PM">
+      <div id="hour13" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">1PM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 description" rows="3" placeholder="Schedule" > </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 1PM timeblock -->
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <div id="t14" class="row time-block 2PM">
+      <div id="hour14" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">2PM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 description" rows="3" placeholder="Schedule"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 2PM timeblock -->
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <div id="t15" class="row time-block 3PM">
+      <div id="hour15" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">3PM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 description" rows="3" placeholder="Schedule" > </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 3PM timeblock -->
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
 
-      <div id="t16" class="row time-block 4PM">
+      <div id="hour16" class="row time-block">
         <div class="col-2 col-md-1 hour text-center py-3">4PM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
+        <textarea class="col-8 col-md-10 description" rows="3" placeholder="Schedule"> </textarea>
         <!-- The line of code below add styling and a string to the save button associated with the 4PM timeblock -->
         <button class="btn saveBtn col-2 col-md-1" aria-label="save">
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
 
-        <div id="t17" class="row time-block 5PM">
-          <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
-          <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-          <!-- The line of code below add styling and a string to the save button associated with the 5PM timeblock -->
-          <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-            <i class="fas fa-save" aria-hidden="true"></i>
-          </button>
-        </div>
-
+      <div id="hour17" class="row time-block">
+        <div class="col-2 col-md-1 hour text-center py-3">5PM</div>
+        <textarea class="col-8 col-md-10 description" rows="3"></textarea>
+        <!-- The line of code below add styling and a string to the save button associated with the 5PM timeblock -->
+        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
+          <i class="fas fa-save" aria-hidden="true"></i>
+        </button>
       </div>
+
+     </div>
+     <!-- Bootstrapped code to enhance the JavaScript -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
       integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
       crossorigin="anonymous"
     ></script>
-
+    <!-- Bootstrapped moment.js to populate the current date and time -->
+    <link
+      href="https://momentjs.com/downloads/moment-with-locales.js"
+      rel="current date"
+    />
     <!-- Linked JavaScript file to bottom of HTML file to link JavaScript funtions to webpage-->
-<script src="/assets/script.js"></script>
+    <script src="/assets/script.js"></script>
   </body>
 </html>
