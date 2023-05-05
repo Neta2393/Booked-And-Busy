@@ -10,3 +10,24 @@ $(document).ready(function () {
 
  });
 });
+
+const timeBlock = document.getElementById("time-block");
+	timeBlock.innerText = `The current hour is ${hour}`;
+
+	if (hour < 9) {
+		timeBlock.classList.remove("present");
+		timeBlock.classList.remove("future");
+		timeBlock.classList.add("past");
+	} else if (hour >= 9 && hour < 17) {
+		timeBlock.classList.remove("past");
+		timeBlock.classList.remove("future");
+		timeBlock.classList.add("present");
+	} else {
+		timeBlock.classList.remove("past");
+		timeBlock.classList.remove("present");
+		timeBlock.classList.add("future");
+	}
+
+
+updateTimeBlock();
+setInterval(updateTimeBlock, 1000 * 60 * 60);
